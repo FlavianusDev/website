@@ -13,7 +13,7 @@ Sistem kerja websitenya:
 
 Cara Clone ke Komputermu :
 
-1. git clone "{url repositorinya}"
+1. git clone https://github.com/FlavianusDev/landing-page-toko-online-flavianus.git
 
 2. npm install
 
