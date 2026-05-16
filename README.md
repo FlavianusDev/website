@@ -1,6 +1,8 @@
 ![Gambar Tampilan Website](assets/gambar.png)
 
 Author : Flavianus Ferdinand Jegara
+
+
 Github : FlavianusDev
 
 Website landing page Toko Online sederhana, dibuat dengan html, css, dan javascript. Dan json sebagai database sederhana nya.
