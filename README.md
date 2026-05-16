@@ -1,3 +1,5 @@
+![Gambar Tampilan Website](assets/gambar.png)
+
 Author : Flavianus Ferdinand Jegara
 Github : FlavianusDev
 
