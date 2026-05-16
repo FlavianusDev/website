@@ -1,0 +1,679 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+    /* background-color: red; */
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Navbar */
+.navbar {
+    padding: 25px 0;
+}
+
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-box .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-box .menu li {
+    list-style-type: none;
+}
+
+.navbar-box .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/* .navbar-box .menu li a:hover {
+    border-radius: 0%;
+    border-bottom: blue;
+} */
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(102, 51, 153, 0.5);
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .navbar-box {
+        justify-content: center;
+    }
+
+    .navbar-box .menu li a {
+        color: white;
+    }
+}
+
+@media (max-width: 475px) {
+    .navbar-box .menu {
+        gap: 20px;
+    }
+}
+
+/* Hero */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/wp16013652-arknights-endfield-wallpapers.jpg);
+    width: 100%;
+    /* min-height: 100vh; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 30px; /* tambahan */
+    padding: 10px;
+}
+
+.hero p a {
+    text-decoration: none;
+    color: blue;
+    background-color: transparent;
+    padding: 0;
+    font-size: 15px;
+    transition: none;
+}
+
+.hero a {
+    color: white;
+    text-decoration: none;
+    background-color: rebeccapurple;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 3s ease;
+}
+
+.hero a:hover{
+    background-color: black;
+}
+
+/* Tentang */
+.tentang {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.tentang-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.tentang-box img {
+    width: 500px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
+    box-shadow: 5px 5px 15px  black;
+    transition: all 0.3s ease;
+}
+
+.tentang-box img:hover {
+    filter: hue-rotate(90deg);
+}
+
+.tentang-box h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    
+}
+
+.tentang-box p {
+    line-height: 2;
+    text-align: justify;
+    font-size: 30px; /* tambahan */
+}
+
+@media (max-width: 992px) {
+    .tentang-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .tentang-box p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575) {
+    .tentang-box img {
+        width: 100%;
+    }
+}
+
+
+/* Proyek */
+.proyek {
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 70px;
+}
+
+.proyek .container > h1 {
+    text-align: center;
+    margin-block: 50px;
+    font-size: 40px;
+}
+
+.proyek-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.proyek-box img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.proyek-box .desc {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.proyek-box .box {
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.proyek-box .desc a {
+    text-decoration: none;
+    color: white;
+    background-color: rebeccapurple;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.proyek-box .desc a:hover {
+    background-color: black;
+}
+
+@media (max-width: 992px) {
+    .proyek-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .proyek-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Produk (tambahan style untuk halaman produk) */
+.produk-header {
+    text-align: center;
+    margin-block: 60px 30px;
+}
+
+.produk-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.produk-header p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* Toolbar */
+.produk-toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: end;
+    gap: 16px;
+    margin-bottom: 30px;
+    padding: 18px 18px;
+    border-radius: 14px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+.toolbar-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.toolbar-group label {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.produk-toolbar select,
+.produk-toolbar input[type="search"] {
+    width: 100%;
+    border: 1px solid rgba(102, 51, 153, 0.25);
+    outline: none;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 16px;
+    background: white;
+}
+
+.toolbar-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Card produk lebih rapi */
+.proyek-box {
+    grid-auto-rows: 1fr;
+}
+
+.produk-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.proyek-box .box {
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.proyek-box img {
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.proyek-box .desc {
+    padding: 14px 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proyek-box .desc h1 {
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.proyek-box .desc a {
+    padding: 10px 14px;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+}
+
+
+/* Button umum */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rebeccapurple;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.btn-detail {
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+/* Card produk */
+.produk-card {
+    /* tetap pakai grid/proyek-box yang sudah ada, tapi class baru */
+    display: flex;
+    flex-direction: column;
+}
+
+.proyek-box .desc h1 {
+    font-size: 28px;
+}
+
+.proyek-box .desc a {
+    display: inline-block;
+}
+
+.proyek-box .box {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+}
+
+/* Section extras */
+.produk-extra {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.produk-section {
+    margin-top: 60px;
+}
+
+.produk-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.feature p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.feature span {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.faq details {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.faq p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.produk-cta {
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: linear-gradient(120deg, rgba(102, 51, 153, 0.15), rgba(0, 0, 0, 0));
+    border-radius: 16px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+}
+
+.produk-cta h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.produk-cta p {
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+    position: relative;
+    width: min(980px, 100%);
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    background: rgba(0, 0, 0, 0.12);
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 0;
+}
+
+.modal-media img {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+.modal-body {
+    padding: 28px;
+}
+
+.modal-body h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.modal-price {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.modal-body p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.modal-actions {
+    margin-top: 20px;
+}
+
+.modal-hint {
+    margin-top: 14px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+    .produk-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .toolbar-group {
+        min-width: unset;
+    }
+
+    .three-col {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-media img {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 575px) {
+    .proyek-box .desc h1 {
+        font-size: 22px;
+    }
+
+    .produk-header h1 {
+        font-size: 30px;
+    }
+
+    .produk-header p {
+        font-size: 18px;
+    }
+
+    .produk-toolbar {
+        padding: 14px;
+        gap: 16px;
+    }
+
+    .produk-toolbar select,
+    .produk-toolbar input[type="search"] {
+        font-size: 16px;
+    }
+
+    .toolbar-actions {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .modal-body {
+        padding: 18px;
+    }
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+
+footer p span {
+    font-weight: bold;
+}
+
+footer .social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .social a {
+    color: white;
+    font-size: 28px;
+}
+
+@media (max-width: 268px) {
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer p {
+        order: 2;
+    }
+
+    footer .social {
+        order: 1;
+    }
+}
+

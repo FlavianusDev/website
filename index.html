@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Flavianus</title>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="./assets/images/4882b637a3f946a2b0e9724a3188785e.png" type="image/x-icon">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cloudflare.com">  -->
+
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+
+</head>
+
+<body id="beranda">
+    <!-- <h1>Hello World!</h1> -->
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-box">
+                <div class="logo">
+                    <h1>Flavianus</h1>
+                </div>
+                <div class="menu">
+                    <li>
+                        <a href="#beranda">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="#tentang">Tentang</a>
+                    </li>
+                    <li>
+                        <a href="#produk">Produk</a>
+                    </li>
+                    <li>
+                        <a href="#kontak">Kontak</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Toko Online Flavianus</h1>
+        <p>Toko online sederhana yang menjual beberapa produk "biasa". </p>
+        <a href="#kontak">Tentang</a>
+    </div>
+
+
+    <!-- Tentang -->
+    <div class="tentang" id="tentang">
+        <div class="container">
+            <div class="tentang-box">
+                <div class="box">
+                    <img src="./assets/images/tentang-img.jpg" alt="Tentang">
+                </div>
+                <div class="box">
+                    <h1>Tentang Toko</h1>
+                    <p>Toko ini menyediakan beberapa produk sehari-hari, dan dijamin dengan harga yang terjangkau serta
+                        lebih murah.
+                        Toko ini dibuat dan dioperasikan oleh saya sendiri. Kalo ada yang bertanya kenapa websitenya
+                        polos sekali?
+                        Karna website ini masih versi sederhana dari versi yang akan datang, kedepannya bakal lebih
+                        besar dan lengkap.
+                        Karna saya lagi sibuk, jadi proyeknya masih saya cicil ngodingnya dari sekarang. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Produk -->
+    <div class="proyek" id="produk">
+        <div class="container">
+            <div class="produk-header">
+                <h1>Produk Kami</h1>
+                <p>Belanja praktis untuk kebutuhan harian. Pilih produk, lihat detail, lalu hubungi kami.</p>
+            </div>
+
+            <div class="produk-toolbar" aria-label="Filter produk">
+                <div class="toolbar-group">
+                    <label for="kategori">Kategori</label>
+                    <select id="kategori">
+                        <option value="all">Semua</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="minuman">Minuman</option>
+                        <option value="kebutuhan">Kebutuhan</option>
+                        <option value="aksesoris">Aksesoris</option>
+                    </select>
+                </div>
+
+                <div class="toolbar-group">
+                    <label for="search">Cari</label>
+                    <input id="search" type="search" placeholder="Ketik nama produk..." autocomplete="off" />
+                </div>
+
+                <div class="toolbar-actions">
+                    <button class="btn" id="resetBtn" type="button">Reset</button>
+                </div>
+            </div>
+
+            <div class="proyek-box" id="produkGrid" aria-live="polite">
+                <!-- Produk akan di-render dari data/db.json -->
+            </div>
+
+            <div class="produk-extra">
+                <!-- Keunggulan (disesuaikan: tentang toko) -->
+                <section class="produk-section" id="keunggulan">
+                    <h2>Keunggulan Toko Kami</h2>
+                    <p class="section-subtitle">
+                        Toko online sederhana yang dibuat fokus ke pengalaman belanja: mudah dipilih, jelas
+                        informasinya,
+                        dan dibantu sampai kebutuhan kamu beres.
+                    </p>
+
+                    <div class="three-col">
+                        <div class="feature feature-card">
+                            <div class="feature-icon" aria-hidden="true"><i class="fas fa-tag"></i></div>
+                            <h3>Harga Terjangkau</h3>
+                            <p>Kami pilih produk supaya tetap ramah di kantong tanpa mengurangi kualitas.</p>
+                        </div>
+
+                        <div class="feature feature-card">
+                            <div class="feature-icon" aria-hidden="true"><i class="fas fa-truck"></i></div>
+                            <h3>Respon Cepat</h3>
+                            <p>Setelah kamu klik detail, kamu bisa langsung hubungi kami untuk konfirmasi.</p>
+                        </div>
+
+                        <div class="feature feature-card">
+                            <div class="feature-icon" aria-hidden="true">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Produk Terpercaya</h3>
+                            <p>Barang yang kami tawarkan cocok untuk kebutuhan harian dan siap dipakai.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="produk-section" id="testimoni">
+                    <h2>Testimoni</h2>
+                    <div class="three-col">
+                        <div class="feature">
+                            <p>"Pengirimannya cepat dan kualitasnya bagus!"</p>
+                            <span>- Rina</span>
+                        </div>
+                        <div class="feature">
+                            <p>"Pilihan produknya beragam, gampang carinya."</p>
+                            <span>- Dika</span>
+                        </div>
+                        <div class="feature">
+                            <p>"Harga pas, suka banget sama botol minum."</p>
+                            <span>- Sari</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="produk-section" id="faq">
+                    <h2>FAQ</h2>
+                    <div class="faq">
+                        <details>
+                            <summary>Bagaimana cara memesan?</summary>
+                            <p>Klik “Lihat Detail” lalu hubungi lewat tombol CTA (WhatsApp) di bawah.</p>
+                        </details>
+                        <details>
+                            <summary>Apakah bisa pilih kategori tertentu?</summary>
+                            <p>Bisa. Gunakan dropdown kategori dan kolom “Cari” untuk menemukan produk.</p>
+                        </details>
+                        <details>
+                            <summary>Apakah ada biaya pengiriman?</summary>
+                            <p>Biaya pengiriman mengikuti jarak dan akan diinformasikan saat konfirmasi.</p>
+                        </details>
+                    </div>
+                </section>
+
+                <section class="produk-cta">
+                    <h2>Siap belanja hari ini?</h2>
+                    <p>Pilih produk favoritmu, lalu hubungi kami.</p>
+                    <a class="btn" href="https://api.whatsapp.com/send?phone=6285387414554" target="_blank"
+                        rel="noreferrer">Hubungi via WhatsApp</a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detail Produk -->
+    <div class="modal" id="produkModal" aria-hidden="true">
+        <div class="modal-overlay" data-close="true"></div>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" aria-label="Tutup" data-close="true">×</button>
+
+            <div class="modal-grid">
+                <div class="modal-media">
+                    <img id="modalImage" src="" alt="Detail produk" />
+                </div>
+                <div class="modal-body">
+                    <h3 id="modalTitle">Nama Produk</h3>
+                    <div class="modal-price" id="modalPrice">Rp 0</div>
+                    <p id="modalDesc">Deskripsi produk</p>
+                    <div class="modal-actions">
+                        <a class="btn" id="modalWhatsApp" href="https://api.whatsapp.com/send?phone=6285387414554"
+                            target="_blank" rel="noreferrer">
+                            Order / Hubungi
+                        </a>
+                    </div>
+                    <p class="modal-hint">*Harga & stok bisa berubah. Konfirmasi dulu ya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const kategoriEl = document.getElementById('kategori');
+            const searchEl = document.getElementById('search');
+            const resetBtn = document.getElementById('resetBtn');
+            const produkGrid = document.getElementById('produkGrid');
+
+            const modal = document.getElementById('produkModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalPrice = document.getElementById('modalPrice');
+            const modalDesc = document.getElementById('modalDesc');
+            const modalWhatsApp = document.getElementById('modalWhatsApp');
+            const closeButtons = modal.querySelectorAll('[data-close="true"]');
+
+            const rupiah = (n) => {
+                try {
+                    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(Number(n));
+                } catch {
+                    return 'Rp ' + Number(n).toString();
+                }
+            };
+
+            const getProducts = () => Array.from(produkGrid.querySelectorAll('.produk-card'));
+
+            const applyFilter = () => {
+                const kategori = (kategoriEl?.value || 'all').toLowerCase();
+                const query = (searchEl?.value || '').toLowerCase().trim();
+
+                getProducts().forEach(card => {
+                    const cardKategori = (card.getAttribute('data-kategori') || '').toLowerCase();
+                    const nama = (card.getAttribute('data-nama') || '').toLowerCase();
+
+                    const matchKategori = kategori === 'all' ? true : cardKategori === kategori;
+                    const matchQuery = query === '' ? true : nama.includes(query);
+
+                    card.style.display = (matchKategori && matchQuery) ? '' : 'none';
+                });
+            };
+
+            kategoriEl?.addEventListener('change', applyFilter);
+            searchEl?.addEventListener('input', applyFilter);
+            resetBtn?.addEventListener('click', () => {
+                if (kategoriEl) kategoriEl.value = 'all';
+                if (searchEl) searchEl.value = '';
+                applyFilter();
+            });
+
+            const openModalFromCard = (card) => {
+                modalImage.src = card.getAttribute('data-gambar') || '';
+                modalImage.alt = card.getAttribute('data-nama') || 'Detail produk';
+                modalTitle.textContent = card.getAttribute('data-nama') || '';
+                modalPrice.textContent = rupiah(card.getAttribute('data-harga') || 0);
+                modalDesc.textContent = card.getAttribute('data-deskripsi') || '';
+
+                const nama = encodeURIComponent(card.getAttribute('data-nama') || 'Produk');
+                const harga = encodeURIComponent(rupiah(card.getAttribute('data-harga') || 0));
+                const tokoPhone = (window.__TOKO_PHONE__ || '6285387414554');
+                const text = encodeURIComponent(`Halo, saya mau order: ${decodeURIComponent(nama)} (Harga: ${decodeURIComponent(harga)})`);
+                modalWhatsApp.href = `https://api.whatsapp.com/send?phone=${tokoPhone}&text=${text}`;
+
+                modal.classList.add('open');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('open');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            };
+
+            document.addEventListener('click', (e) => {
+                const btn = e.target.closest('.btn-detail');
+                if (btn) {
+                    e.preventDefault();
+                    const card = btn.closest('.produk-card');
+                    if (card) openModalFromCard(card);
+                }
+            });
+
+            closeButtons.forEach(el => {
+                el.addEventListener('click', closeModal);
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+            });
+
+            const renderProduk = (products) => {
+                produkGrid.innerHTML = '';
+
+                products.forEach((p) => {
+                    const card = document.createElement('div');
+                    card.className = 'produk-card';
+                    card.setAttribute('data-kategori', p.kategori || '');
+                    card.setAttribute('data-nama', p.nama || '');
+                    card.setAttribute('data-harga', String(p.harga ?? 0));
+                    card.setAttribute('data-deskripsi', p.deskripsi || '');
+                    card.setAttribute('data-gambar', p.gambar || '');
+
+                    card.innerHTML = `
+                        <div class="box">
+                            <img src="${p.gambar || ''}" alt="${p.nama || ''}" />
+                            <div class="desc">
+                                <h1>${p.nama || ''}</h1>
+                                <a href="#" class="btn-detail" data-id="${p.id || ''}">Lihat Detail</a>
+                            </div>
+                        </div>
+                    `;
+
+                    produkGrid.appendChild(card);
+                });
+            };
+
+            const fillKeunggulan = (keunggulan) => {
+                const el = document.querySelector('#keunggulan');
+                if (!el || !keunggulan) return;
+
+                el.querySelector('h2') && (el.querySelector('h2').textContent = keunggulan.title || '');
+                const subtitle = el.querySelector('.section-subtitle');
+                if (subtitle) subtitle.textContent = keunggulan.subtitle || '';
+
+                const wrap = el.querySelector('.three-col');
+                if (!wrap) return;
+                wrap.innerHTML = '';
+
+                (keunggulan.items || []).forEach((it) => {
+                    const div = document.createElement('div');
+                    div.className = 'feature feature-card';
+                    div.innerHTML = `
+                        <div class="feature-icon" aria-hidden="true">${it.icon || ''}</div>
+                        <h3>${it.title || ''}</h3>
+                        <p>${it.desc || ''}</p>
+                    `;
+                    wrap.appendChild(div);
+                });
+            };
+
+            const fillTestimoni = (testimoni) => {
+                const el = document.querySelector('#testimoni');
+                if (!el || !testimoni) return;
+                const wrap = el.querySelector('.three-col');
+                if (!wrap) return;
+                wrap.innerHTML = '';
+
+                (testimoni || []).forEach((t) => {
+                    const div = document.createElement('div');
+                    div.className = 'feature';
+                    div.innerHTML = `<p>${t.text || ''}</p><span>- ${t.by || ''}</span>`;
+                    wrap.appendChild(div);
+                });
+            };
+
+            const fillFaq = (faq) => {
+                const el = document.querySelector('#faq');
+                if (!el || !faq) return;
+                const wrap = el.querySelector('.faq');
+                if (!wrap) return;
+                wrap.innerHTML = '';
+
+                (faq || []).forEach((f) => {
+                    const details = document.createElement('details');
+                    details.innerHTML = `
+                        <summary>${f.q || ''}</summary>
+                        <p>${f.a || ''}</p>
+                    `;
+                    wrap.appendChild(details);
+                });
+            };
+
+            const fillCTA = (cta) => {
+                const el = document.querySelector('.produk-cta');
+                if (!el || !cta) return;
+                el.querySelector('h2') && (el.querySelector('h2').textContent = cta.title || '');
+                const subtitleEl = el.querySelector('.produk-cta p');
+                if (subtitleEl) subtitleEl.textContent = cta.subtitle || '';
+
+                const a = el.querySelector('.produk-cta a.btn');
+                if (!a) return;
+
+                const tokoPhone = cta.whatsappPhone || window.__TOKO_PHONE__;
+                const prefix = cta.whatsappTextPrefix || 'Halo, saya mau order:';
+                a.href = `https://api.whatsapp.com/send?phone=${tokoPhone}&text=${encodeURIComponent(prefix)}`;
+            };
+
+
+            const loadDb = async () => {
+                try {
+                    const res = await fetch('./data/db.json');
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    const db = await res.json();
+
+                    window.__TOKO_PHONE__ = db?.site?.whatsappPhone || window.__TOKO_PHONE__ || '6285387414554';
+
+                    const products = db?.products || [];
+                    const keunggulan = db?.keunggulan;
+                    const testimoni = db?.testimoni;
+                    const faq = db?.faq;
+                    const cta = db?.cta;
+
+                    if (products.length) renderProduk(products);
+                    fillKeunggulan(keunggulan);
+                    fillTestimoni(testimoni);
+                    fillFaq(faq);
+                    fillCTA(cta);
+
+                    applyFilter();
+                } catch (e) {
+                    console.error('Gagal memuat data db.json:', e);
+                    // fallback: tampilkan pesan sederhana di grid
+                    produkGrid.innerHTML = '<p style="text-align:center;grid-column:1/-1;opacity:.7">Gagal memuat data produk.</p>';
+                }
+            };
+
+            loadDb();
+        })();
+    </script>
+
+
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <p>&copy; Copyright 2026 by <span>Flavianus Ferdinand Jegara</span></p>
+        <div class="social">
+            <!-- <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a> -->
+
+
+            <a href="https://api.whatsapp.com/send?phone=6285387414554">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left"> -->
+                <!-- Column 1: Company Info -->
+                <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Flavianus Store</h5>
+                    <p>Menjual berbagai macam produk seperti elektronik, pakaian, dan aksesori.</p>
+                </div> -->
+                <!-- Column 2: Links -->
+                <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Social Media</h5>
+                    <p><i class="fab fa-facebook"></i> <a href="#" class="text-white"
+                            style="text-decoration: none;">Facebook</a></p>
+                    <p><i class="fab fa-instagram"></i> <a href="#" class="text-white"
+                            style="text-decoration: none;">Instagram</a></p> -->
+                </div>
+                <!-- Column 3: Contact -->
+                <!-- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Kontak</h5>
+                    <p><i class="fas fa-home mr-3"></i> Sintang, Kalimantan Barat</p>
+                    <p><i class="fas fa-envelope mr-3"></i> ferdinandfjegara@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+</body>
+
+</html>

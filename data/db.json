@@ -1,0 +1,121 @@
+{
+  "site": {
+    "name": "Toko Online Flavianus",
+    "owner": "Flavianus Ferdinand Jegara",
+    "whatsappPhone": "6285387414554",
+    "copyrightYear": 2026
+  },
+  "products": [
+    {
+      "id": "roti-coklat",
+      "kategori": "makanan",
+      "nama": "Roti Coklat",
+      "harga": 15000,
+      "deskripsi": "Roti coklat lembut dengan topping coklat yang manis dan wangi.",
+      "gambar": "./assets/images/proyek1.jpg"
+    },
+    {
+      "id": "es-teh-manis",
+      "kategori": "minuman",
+      "nama": "Es Teh Manis",
+      "harga": 10000,
+      "deskripsi": "Es teh manis segar, cocok untuk menemani aktivitas harian.",
+      "gambar": "./assets/images/proyek2.jpg"
+    },
+    {
+      "id": "sabun-cuci-piring",
+      "kategori": "kebutuhan",
+      "nama": "Sabun Cuci Piring",
+      "harga": 12000,
+      "deskripsi": "Sabun cuci piring yang nyaman digunakan dan membantu membersihkan cepat.",
+      "gambar": "./assets/images/proyek3.jpg"
+    },
+    {
+      "id": "botol-minum",
+      "kategori": "aksesoris",
+      "nama": "Botol Minum",
+      "harga": 25000,
+      "deskripsi": "Botol minum praktis, ukuran pas untuk dibawa ke mana saja.",
+      "gambar": "./assets/images/proyek4.jpg"
+    },
+    {
+      "id": "biskuit-coklat",
+      "kategori": "makanan",
+      "nama": "Biskuit Coklat",
+      "harga": 18000,
+      "deskripsi": "Biskuit coklat renyah dengan rasa yang pas untuk camilan.",
+      "gambar": "./assets/images/proyek5.jpg"
+    },
+    {
+      "id": "tisu-gulung",
+      "kategori": "kebutuhan",
+      "nama": "Tisu Gulung",
+      "harga": 9000,
+      "deskripsi": "Tisu gulung praktis untuk kebutuhan dapur dan rumah tangga.",
+      "gambar": "./assets/images/Screenshot 2026-05-06 102008.png"
+    }
+  ],
+  "keunggulan": {
+    "title": "Keunggulan Toko Kami",
+    "subtitle": "Toko online sederhana yang dibuat fokus ke pengalaman belanja: mudah dipilih, jelas informasinya, dan dibantu sampai kebutuhan kamu beres.",
+    "items": [
+      {
+        "title": "Harga Terjangkau",
+        "desc": "Kami pilih produk supaya tetap ramah di kantong tanpa mengurangi kualitas."
+      },
+      {
+        "title": "Respon Cepat",
+        "desc": "Setelah kamu klik detail, kamu bisa langsung hubungi kami untuk konfirmasi."
+      },
+      {
+        "title": "Produk Terpercaya",
+        "desc": "Barang yang kami tawarkan cocok untuk kebutuhan harian dan siap dipakai."
+      }
+    ]
+  },
+  "testimoni": [
+    {
+      "text": "“Pengirimannya cepat dan kualitasnya bagus!”",
+      "by": "Rina"
+    },
+    {
+      "text": "“Pilihan produknya beragam, gampang carinya.”",
+      "by": "Dika"
+    },
+    {
+      "text": "“Harga pas, suka banget sama botol minum.”",
+      "by": "Sari"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bagaimana cara memesan?",
+      "a": "Klik “Lihat Detail” lalu hubungi lewat tombol CTA (WhatsApp) di bawah."
+    },
+    {
+      "q": "Apakah bisa pilih kategori tertentu?",
+      "a": "Bisa. Gunakan dropdown kategori dan kolom “Cari” untuk menemukan produk."
+    },
+    {
+      "q": "Apakah ada biaya pengiriman?",
+      "a": "Biaya pengiriman mengikuti jarak dan akan diinformasikan saat konfirmasi."
+    },
+    {
+      "q": "Bisa COD?",
+      "a": "Bisa, namun hanya akan dikenakan biaya tambahan."
+    },
+    {
+      "q": "Kalo mau beli gimana?",
+      "a": "Klik CTA atau tombol untuk hubungi kami, lalu sebutkan produk yang ingin kamu beli."
+    },
+    {
+      "q": "Apakah ada garansi?",
+      "a": "Kami pastikan produk yang dikirim sesuai dengan deskripsi. Jika ada masalah, hubungi kami untuk solusi."
+    }
+  ],
+  "cta": {
+    "title": "Siap belanja hari ini?",
+    "subtitle": "Pilih produk favoritmu, lalu hubungi kami.",
+    "whatsappTextPrefix": "Halo, saya mau order:"
+  }
+}
